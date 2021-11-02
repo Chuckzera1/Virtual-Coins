@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import millify from "millify";
 import { removeAccents } from "../utils/removeAccents";
 
-const Cryptocurrencies = ({ simplified }: { simplified: boolean }) => {
+const Cryptocurrencies = ({ simplified }: { simplified?: true }) => {
   const count = simplified ? 10 : 100;
   const { data: cryptoList, isFetching } = useGetCryptosQuery(count);
   const [cryptos, setCryptos] = useState<IGlobalCoin[]>(
