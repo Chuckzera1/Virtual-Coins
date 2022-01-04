@@ -1,4 +1,5 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
+import { coinRankingApiUrl, hostCoinsRanking, rapidApiKey } from "../env";
 import { IGlobalCoin, IGlobalStats } from "../interface/GlobalStats";
 
 interface GetCryptosReturnType {
@@ -15,11 +16,11 @@ interface GetCryptoDetailsReturnType {
 }
 
 const cryptoApiHeaders = {
-  "x-rapidapi-host": "coinranking1.p.rapidapi.com",
-  "x-rapidapi-key": "a1c67524d6msh96e72590b5d350ep105e69jsn756fd20cf828",
+  "x-rapidapi-host": hostCoinsRanking,
+  "x-rapidapi-key": rapidApiKey,
 };
 
-const baseUrl = "https://coinranking1.p.rapidapi.com";
+const baseUrl = coinRankingApiUrl;
 
 const createRequest = (url: string) => ({ url, headers: cryptoApiHeaders });
 
