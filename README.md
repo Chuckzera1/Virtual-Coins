@@ -1,5 +1,7 @@
 # Virtual-Coins
 
+A React-based project about virtual currencies where you can see a lot of information about several or a specific currency
+
 ## Cryptoverse
 
 <img src="https://media.giphy.com/media/5aqPy4k1g3Ehve1tMp/giphy.gif" width="600" height="250" alt="Coinverse" />
