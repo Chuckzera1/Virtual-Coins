@@ -1,5 +1,7 @@
 # Virtual-Coins
 
+## Cryptoverse
+
 <img src="https://media.giphy.com/media/5aqPy4k1g3Ehve1tMp/giphy.gif" width="600" height="250" alt="Coinverse" />
 
 
