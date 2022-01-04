@@ -1,6 +1,6 @@
 # Virtual-Coins
 
-A React-based project about virtual currencies where you can see a lot of information about several or a specific currency
+ - A React-based project about virtual currencies where you can see a lot of information about several or a specific currency
 
 ## Cryptoverse
 
