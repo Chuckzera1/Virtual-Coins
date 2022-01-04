@@ -1,4 +1,7 @@
 # Virtual-Coins
+
+<iframe src="https://giphy.com/embed/5aqPy4k1g3Ehve1tMp" width="480" height="220" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/5aqPy4k1g3Ehve1tMp">via GIPHY</a></p>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
