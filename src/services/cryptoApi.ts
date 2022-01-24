@@ -1,5 +1,5 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-import { coinRankingApiUrl, hostCoinsRanking, rapidApiKey } from "../env";
+import { coinRankingApiKey, coinRankingApiUrl } from "../env";
 import { IGlobalCoin, IGlobalStats } from "../interface/GlobalStats";
 
 interface GetCryptosReturnType {
@@ -15,10 +15,7 @@ interface GetCryptoDetailsReturnType {
   };
 }
 
-const cryptoApiHeaders = {
-  "x-rapidapi-host": hostCoinsRanking,
-  "x-rapidapi-key": rapidApiKey,
-};
+const cryptoApiHeaders = { "x-access-token": coinRankingApiKey };
 
 const baseUrl = coinRankingApiUrl;
 
@@ -43,7 +40,7 @@ export const cryptoApi = createApi({
         timePeriod,
       }: {
         coinId: string;
-        timePeriod: "3h" | "24h" | "7d" | "30d" | "1y" | "3m" | "3y" | "5y";
+        timePeriod: "24h" | "7d" | "30d" | "1y" | "5y";
       }) => createRequest(`/coin/${coinId}/history/${timePeriod}`),
     }),
   }),
