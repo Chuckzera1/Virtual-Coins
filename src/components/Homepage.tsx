@@ -16,6 +16,7 @@ const Homepage = () => {
 
   return (
     <>
+      {console.log(globalStats)}
       <Title level={2} className="heading">
         Global Crypto Status
       </Title>

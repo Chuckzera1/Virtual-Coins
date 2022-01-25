@@ -27,8 +27,7 @@ export interface IGlobalCoin {
   volume?: number;
   marketCap?: number;
   price?: string;
-  circulatingSupply?: number;
-  totalSupply?: number;
+  supply?: { circulating: string; total: string; confirmed: boolean };
   approvedSupply?: boolean;
   firstSeen?: number;
   listedAt?: number;
@@ -50,4 +49,4 @@ export interface Link {
   url?: string;
 }
 
-export type IGlobalCoinsType = IGlobalCoin
+export type IGlobalCoinsType = IGlobalCoin;
