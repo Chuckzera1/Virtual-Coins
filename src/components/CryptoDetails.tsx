@@ -29,10 +29,10 @@ const CryptoDetails = () => {
     "24h" | "7d" | "30d" | "1y" | "5y"
   >("7d");
   const { data, isFetching } = useGetCryptoDetailsQuery(coinId);
-  // const { data: coinHistory } = useGetCryptoHistoryQuery({
-  //   coinId: coinId!,
-  //   timePeriod: timePeriod!,
-  // });
+  const { data: coinHistory } = useGetCryptoHistoryQuery({
+    coinId: coinId!,
+    timePeriod: timePeriod!,
+  });
 
   const cryptoDetails = data?.data?.coin!;
 
@@ -123,11 +123,11 @@ const CryptoDetails = () => {
           </Option>
         ))}
       </Select>
-      {/* <LineChart
+      <LineChart
         coinHistory={coinHistory}
         currentPrice={millify(Number(cryptoDetails?.price!))}
         coinName={cryptoDetails?.name!}
-      /> */}
+      />
       <Col className="stats-container">
         <Col className="coin-value-statistics">
           <Col className="coin-value-statistics-heading">
